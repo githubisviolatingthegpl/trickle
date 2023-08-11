@@ -33,8 +33,8 @@ parseopts(int argc, char **argv, struct opts *opts)
 		}
 	}
 
-	if (rate < 50 || rate > 57600) {
-		fputs("bad -b, must be 50-57600\n", stderr);
+	if (rate < 50 || rate > 921600) {
+		fputs("bad -b, must be 50-921600\n", stderr);
 		exit(1);
 	}
 
